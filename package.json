@@ -1,0 +1,43 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html -d docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PironSteve/cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PironSteve/cv/issues"
+  },
+  "homepage": "https://pironsteve.github.io/cv",
+  "dependencies": {
+    "@cloudpower97/react-spy": "^1.2.1",
+    "gh-pages": "^2.0.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-modal": "^3.8.1",
+    "react-router-dom": "^4.3.1",
+    "react-scroll": "^1.7.11",
+    "react-scrollspy": "^3.4.0",
+    "react-sound": "^1.2.0",
+    "storm-scroll-spy": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cssnano": "^4.1.8",
+    "nav-scroll-spy": "^1.0.2"
+  }
+}

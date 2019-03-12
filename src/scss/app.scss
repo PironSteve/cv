@@ -1,0 +1,539 @@
+// GENERAL
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  background: url(../img/prism.png);
+  width: 100%;
+}
+// HEADER
+.btnm,
+.btnn {
+  position: fixed;
+  top: 16px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  span {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background: white;
+    margin: 8px;
+    transition: 0.4s all;
+  }
+}
+.btnn span {
+  background: #303036;
+}
+.menu {
+  background: #30bced;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: 0.4s all;
+}
+.show {
+  height: 70px;
+  background: #30bced;
+  transition: 0.4s all;
+  text-align: center;
+  a {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    line-height: 80px;
+    font-size: 20px;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+}
+#l1 {
+  margin-right: 70px;
+}
+#l2 {
+  margin-left: 70px;
+}
+.hidden {
+  text-decoration: none;
+  position: relative;
+  opacity: 0;
+}
+.showed {
+  transition: 0.7s all;
+}
+.linkWidth {
+  display: inline-block;
+  width: 200px;
+}
+
+// INTRO
+.intro {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  span {
+    text-transform: uppercase;
+    display: block;
+  }
+}
+.text1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  // background: url(../img/prism.png);
+  position: relative;
+  animation: text 1.5s 1;
+}
+.text2 {
+  font-size: 30px;
+  color: #30bced;
+  opacity: 0;
+  animation-name: junior;
+  animation-duration: 2s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes text {
+  0% {
+    color: #303036;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+@keyframes junior {
+  100% {
+    opacity: 1;
+  }
+}
+
+.text3 {
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #30bced;
+  border: 1px solid #30bced;
+  background: #303036;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 18px 50px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+  animation-name: buttonPop;
+  animation-duration: 2s;
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+}
+
+.text3:hover {
+  background: #30bced;
+  color: #303036;
+  text-decoration: none;
+}
+
+@keyframes buttonPop {
+  100% {
+    opacity: 1;
+  }
+}
+
+// RESUME SCSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/* GENERAL */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 45px 0 80px 0;
+  .heading {
+    text-align: center;
+    padding-bottom: 40px;
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.red-divider {
+  width: 100px;
+  height: 2px;
+  background: #303036;
+  margin: 0 auto;
+}
+
+.white-divider {
+  width: 100px;
+  height: 2px;
+  background: #30bced;
+  margin: 0 auto;
+}
+
+/* MENU */
+
+.navbar {
+  background: #303036;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  li a {
+    color: #30bced !important;
+  }
+}
+
+.navbar-nav li {
+  a:hover,
+  &.active a {
+    color: #303036 !important;
+    background-color: #30bced !important;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border-style: none;
+}
+
+.icon-bar {
+  background-color: #30bced !important;
+}
+
+/* ABOUT */
+
+#about {
+  padding-top: 100px;
+}
+
+.profile-picture {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+#about .heading {
+  h1 {
+    color: #30bced;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: #fc5130;
+  }
+}
+
+.button1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #30bced;
+  border: 1px solid #30bced;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 18px 50px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+  &:hover {
+    background: #30bced;
+    color: #303036;
+    text-decoration: none;
+  }
+}
+
+.fab {
+  color: white;
+  margin: 10px;
+  &:hover {
+    color: #30bced;
+  }
+}
+
+/* SKILLS */
+
+#skills {
+  background: #30bced;
+  .heading h2 {
+    color: #303036;
+  }
+  .progress {
+    height: 100%;
+    margin: 30px 20px;
+    backface-visibility: #ddd;
+  }
+  .progress-bar {
+    background: #303036;
+  }
+  .progress h5 {
+    text-shadow: 1px 1px 1px #000;
+  }
+  .comp {
+    width: 100px;
+    margin: 32px;
+    display: inline-block;
+  }
+  .comp-container {
+    text-align: center;
+  }
+}
+
+/* EXPERIENCE */
+
+#experience {
+  ul {
+    list-style: none;
+  }
+  .heading h2 {
+    color: #30bced;
+  }
+}
+
+.timeline {
+  padding: 30px 10px;
+  position: relative;
+  &:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 5px;
+    background-color: #30bced;
+    left: 50%;
+    margin-left: -2.5px;
+  }
+  > li {
+    margin-bottom: 20px;
+    position: relative;
+    &:after {
+      clear: both;
+    }
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+  }
+  li .timeline-badge {
+    color: #fc5130;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
+}
+
+.timeline-panel-container {
+  width: 50%;
+  float: left;
+}
+
+.timeline-panel-container-inverted {
+  width: 50%;
+  float: right;
+}
+
+.timeline-panel {
+  width: 90%;
+  float: right;
+  margin-right: 40px;
+  border: 1px solid #d4d4d4;
+  border-radius: 7px;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  background: #ddd;
+}
+
+.timeline-panel-container-inverted .timeline-panel {
+  float: left;
+  margin-left: 40px;
+}
+
+.timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #ddd;
+  border-right: 0 solid #ddd;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-heading {
+  h3 {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  h4 {
+    color: #fc5130;
+  }
+}
+
+/* EDUCATION */
+
+#education {
+  background: #30bced;
+  .heading h2 {
+    color: #303036;
+  }
+}
+
+.education-block {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  background: #ddd;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  h5 {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .glyphicon {
+    font-size: 40px;
+  }
+  h3 {
+    color: #fc5130;
+  }
+  h4 {
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: bold;
+  }
+  .red-divider {
+    margin-bottom: 20px;
+  }
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  .heading h2 {
+    color: #30bced;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    min-height: 233.33px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    &:hover {
+      filter: none;
+      -webkit-filter: none;
+    }
+  }
+}
+
+/* RECOMMANDATIONS */
+
+#recommandations {
+  background: #30bced;
+  ol {
+    list-style: none;
+  }
+  .heading h2 {
+    color: #303036;
+  }
+}
+
+.carousel-control {
+  &.left,
+  &.right {
+    background-image: none;
+    color: #303036;
+  }
+}
+
+.carousel-indicators {
+  bottom: 0px;
+  li {
+    border-color: #303036;
+    &.active {
+      background-color: #303036;
+    }
+  }
+}
+
+#myCarousel .item {
+  padding: 40px 30px;
+  h3 {
+    color: #fc5130;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px 0.5px #303036;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px 0 40px;
+  .glyphicon {
+    font-size: 25px;
+    margin: 20px;
+    color: #fc5130;
+    height: 30px;
+    &:hover {
+      font-size: 27px;
+    }
+  }
+  h5 {
+    color: #30bced;
+    font-weight: normal;
+  }
+}
