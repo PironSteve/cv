@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/PironSteve/cv/issues"
   },
-  "homepage": "https://pironsteve.github.io/cv",
+  "homepage": "https://pironsteve.github.io/cv/",
   "dependencies": {
     "@cloudpower97/react-spy": "^1.2.1",
     "gh-pages": "^2.0.1",
