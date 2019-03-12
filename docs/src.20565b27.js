@@ -106,41 +106,41 @@ var e=require("isarray");module.exports=d,module.exports.parse=t,module.exports.
 },{"./BrowserRouter":"XHaw","./HashRouter":"Upsj","./Link":"/UDl","./MemoryRouter":"U3Bl","./NavLink":"AlLp","./Prompt":"ccQl","./Redirect":"QLDp","./Route":"6zQZ","./Router":"raaq","./StaticRouter":"BRDT","./Switch":"zf0c","./generatePath":"PsHF","./matchPath":"dUvd","./withRouter":"1NgP"}],"w0no":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=n(require("react")),t=require("react-router-dom");function n(e){return e&&e.__esModule?e:{default:e}}function r(e){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function u(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function a(e,t,n){return t&&u(e.prototype,t),n&&u(e,n),e}function c(e,t){return!t||"object"!==r(t)&&"function"!=typeof t?i(e):t}function i(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function f(e){return(f=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function l(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&s(e,t)}function s(e,t){return(s=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}var p=function(n){function r(){return o(this,r),c(this,f(r).apply(this,arguments))}return l(r,e.default.Component),a(r,[{key:"render",value:function(){return e.default.createElement("div",null,e.default.createElement("section",{className:"intro"},e.default.createElement("span",{className:"text1"},"I'm Steve Piron"),e.default.createElement("span",{className:"text2"},"Junior Web Developer"),e.default.createElement(t.Link,{to:"/resume"},e.default.createElement("button",{className:"text3"},"Resume"))))}}]),r}();exports.default=p;
 },{"react":"HdMw","react-router-dom":"pvo3"}],"zxnV":[function(require,module,exports) {
-module.exports="me.dc55323a.jpg";
+module.exports="/cv/me.dc55323a.jpg";
 },{}],"Tequ":[function(require,module,exports) {
-module.exports="HTML5.7d0a394d.png";
+module.exports="/cv/HTML5.7d0a394d.png";
 },{}],"6P25":[function(require,module,exports) {
-module.exports="CSS3.4dd42ddf.png";
+module.exports="/cv/CSS3.4dd42ddf.png";
 },{}],"FawK":[function(require,module,exports) {
-module.exports="ReactJS.befd6086.png";
+module.exports="/cv/ReactJS.befd6086.png";
 },{}],"LIeJ":[function(require,module,exports) {
-module.exports="Bootstrap.bb21d4e7.png";
+module.exports="/cv/Bootstrap.bb21d4e7.png";
 },{}],"8in3":[function(require,module,exports) {
-module.exports="SASS.e1233781.png";
+module.exports="/cv/SASS.e1233781.png";
 },{}],"6zMP":[function(require,module,exports) {
-module.exports="Javascript.ef057123.png";
+module.exports="/cv/Javascript.ef057123.png";
 },{}],"yYG6":[function(require,module,exports) {
-module.exports="Git.627ff5f1.png";
+module.exports="/cv/Git.627ff5f1.png";
 },{}],"dRqi":[function(require,module,exports) {
-module.exports="MongoDB.6d3a0e8e.png";
+module.exports="/cv/MongoDB.6d3a0e8e.png";
 },{}],"dvLA":[function(require,module,exports) {
-module.exports="NodeJS.3b84d3f9.png";
+module.exports="/cv/NodeJS.3b84d3f9.png";
 },{}],"Y0Pg":[function(require,module,exports) {
-module.exports="Mysql.0425d622.png";
+module.exports="/cv/Mysql.0425d622.png";
 },{}],"N6/N":[function(require,module,exports) {
-module.exports="PHP.2737ebd9.png";
+module.exports="/cv/PHP.2737ebd9.png";
 },{}],"rBUh":[function(require,module,exports) {
-module.exports="VueJS.7bbc2f23.png";
+module.exports="/cv/VueJS.7bbc2f23.png";
 },{}],"Bd+1":[function(require,module,exports) {
-module.exports="travelagency.a1425a04.png";
+module.exports="/cv/travelagency.a1425a04.png";
 },{}],"oDpc":[function(require,module,exports) {
-module.exports="snake.e0f8f91e.png";
+module.exports="/cv/snake.e0f8f91e.png";
 },{}],"EnOG":[function(require,module,exports) {
-module.exports="topactrices.2308e621.png";
+module.exports="/cv/topactrices.2308e621.png";
 },{}],"m/wj":[function(require,module,exports) {
-module.exports="pomodoro.ec1b91cf.png";
+module.exports="/cv/pomodoro.ec1b91cf.png";
 },{}],"pfSH":[function(require,module,exports) {
-module.exports="cv.e0048738.png";
+module.exports="/cv/cv.e0048738.png";
 },{}],"kRTa":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var t=function(t){if(t=t?0===t.indexOf("#")?t:"#"+t:"",history.pushState){var e=window.location;history.pushState(null,null,t?e.pathname+e.search+t:e.pathname+e.search)}else location.hash=t},e=function(){return window.location.hash.replace(/^#/,"")},n=function(t){return function(e){return t.contains?t!=e&&t.contains(e):!!(16&t.compareDocumentPosition(e))}},o=function(t,e){return t===document?e.getBoundingClientRect().top+(window.scrollY||window.pageYOffset):"static"!==getComputedStyle(t).position?e.offsetTop:e.getBoundingClientRect().top+t.scrollTop};exports.default={pushHash:t,getHash:e,filterElementInContainer:n,scrollOffset:o};
 },{}],"wMdc":[function(require,module,exports) {
@@ -183,4 +183,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{"react":"HdMw","./Intro":"w0no","./Resume":"93xs","react-router-dom":"pvo3"}],"H99C":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom"));require("./scss/app.scss");var t=u(require("./components/App"));function u(e){return e&&e.__esModule?e:{default:e}}r.default.render(e.default.createElement(t.default,null),document.getElementById("app"));
 },{"react":"HdMw","react-dom":"X9zx","./scss/app.scss":"FCLm","./components/App":"V6oR"}]},{},["H99C"], null)
-//# sourceMappingURL=src.e6824c7f.map
+//# sourceMappingURL=/cv/src.e6824c7f.map

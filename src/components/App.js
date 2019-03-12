@@ -9,15 +9,8 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
-            <Route
-              exact
-              path={process.env.PUBLIC_URL + "/"}
-              component={Intro}
-            />
-            <Route
-              path={process.env.PUBLIC_URL + "/resume"}
-              component={Resume}
-            />
+            <Route exact path="/" component={Intro} />
+            <Route path="/resume" component={Resume} />
           </Switch>
         </div>
       </Router>
