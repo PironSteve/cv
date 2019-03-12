@@ -19,7 +19,7 @@
     "url": "https://github.com/PironSteve/cv/issues"
   },
   "engine": {
-    "node": "11.8.0"
+    "node": "11.8"
   },
   "homepage": "https://pironsteve.github.io/cv/",
   "dependencies": {
