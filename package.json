@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/PironSteve/cv/issues"
   },
+  "engine": {
+    "node": "11.8.0"
+  },
   "homepage": "https://pironsteve.github.io/cv/",
   "dependencies": {
     "@cloudpower97/react-spy": "^1.2.1",
