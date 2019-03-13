@@ -194,7 +194,11 @@ export default class Resume extends React.Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="comp-container">
-                    <img className="comp" src={html} alt="" />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${html}`}
+                      alt=""
+                    />
                     <img className="comp" src={Css} alt="" />
                     <img className="comp" src={Reactjs} alt="" />
                     <img className="comp" src={Boot} alt="" />
