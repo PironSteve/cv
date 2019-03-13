@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html -d docs --public-url ./"
+    "build": "parcel build index.html -d docs --public-url ./",
+    "predeploy": "rm -rf docs && parcel build index.html --public--url /parcel-gh-pages-deploy"
   },
   "repository": {
     "type": "git",
