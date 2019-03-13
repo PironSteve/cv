@@ -33368,7 +33368,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "/",
+        path: "".concat(undefined || "", "/"),
         component: _Intro.default
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/resume",
@@ -33423,7 +33423,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34299" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
