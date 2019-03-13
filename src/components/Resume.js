@@ -199,7 +199,11 @@ export default class Resume extends React.Component {
                       src={`${process.env.BASE_PATH || ""}/${html}`}
                       alt=""
                     />
-                    <img className="comp" src={Css} alt="" />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Css}`}
+                      alt=""
+                    />
                     <img className="comp" src={Reactjs} alt="" />
                     <img className="comp" src={Boot} alt="" />
                     <img className="comp" src={Sass} alt="" />
