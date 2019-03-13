@@ -32904,72 +32904,72 @@ function (_React$Component) {
       }, _react.default.createElement("ul", {
         className: "nav navbar-nav"
       }, _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-navi",
+        className: "nav navbar-nav",
         activeClass: "active",
         to: "about",
         spy: true,
         smooth: true,
-        offset: 0,
+        offset: 60,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
       }, _react.default.createElement("a", {
         href: "#about"
       }, "Moi"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-navi",
+        className: "nav navbar-nav",
         activeClass: "active",
         to: "skills",
         spy: true,
         smooth: true,
-        offset: 0,
+        offset: 60,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
       }, _react.default.createElement("a", {
         href: "#skills"
       }, "Comp\xE9tences"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-navi",
+        className: "nav navbar-nav",
         activeClass: "active",
         to: "experience",
         spy: true,
         smooth: true,
-        offset: 0,
+        offset: 60,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
       }, _react.default.createElement("a", {
         href: "#experience"
       }, "Exp\xE9rience"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-navi",
+        className: "nav navbar-nav",
         activeClass: "active",
         to: "education",
         spy: true,
         smooth: true,
-        offset: 0,
+        offset: 60,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
       }, _react.default.createElement("a", {
         href: "#education"
       }, "Education"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-navi",
+        className: "nav navbar-nav",
         activeClass: "active",
         to: "portfolio",
         spy: true,
         smooth: true,
-        offset: 0,
+        offset: 60,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
       }, _react.default.createElement("a", {
         href: "#portfolio"
       }, "Portfolio"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-navi",
+        className: "nav navbar-nav",
         activeClass: "active",
         to: "recommandations",
         spy: true,
         smooth: true,
-        offset: 0,
+        offset: 60,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
@@ -33001,7 +33001,7 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "col-xs-8 col-md-4 profile-picture"
       }, _react.default.createElement("img", {
-        src: "/resume/".concat(_me.default),
+        src: _me.default,
         alt: "Piron Steve",
         className: "img-circle"
       })), _react.default.createElement("div", {

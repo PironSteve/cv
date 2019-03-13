@@ -49,12 +49,12 @@ export default class Resume extends React.Component {
               <div className="collapse navbar-collapse" id="myNavbar">
                 <ul className="nav navbar-nav">
                   <Link
-                    className="nav navbar-navi"
+                    className="nav navbar-nav"
                     activeClass="active"
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={60}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -62,12 +62,12 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-navi"
+                    className="nav navbar-nav"
                     activeClass="active"
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={60}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -75,12 +75,12 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-navi"
+                    className="nav navbar-nav"
                     activeClass="active"
                     to="experience"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={60}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -88,12 +88,12 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-navi"
+                    className="nav navbar-nav"
                     activeClass="active"
                     to="education"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={60}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -101,12 +101,12 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-navi"
+                    className="nav navbar-nav"
                     activeClass="active"
                     to="portfolio"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={60}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -114,12 +114,12 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-navi"
+                    className="nav navbar-nav"
                     activeClass="active"
                     to="recommandations"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={60}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -146,11 +146,7 @@ export default class Resume extends React.Component {
           </div>
           <section id="about" className="container-fluid">
             <div className="col-xs-8 col-md-4 profile-picture">
-              <img
-                src={`/resume/${Me}`}
-                alt="Piron Steve"
-                className="img-circle"
-              />
+              <img src={Me} alt="Piron Steve" className="img-circle" />
             </div>
             <div className="heading">
               <h1>Hello, moi c'est Steve</h1>
