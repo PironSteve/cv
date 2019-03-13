@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Switch>
+          <Switch basename="/resume">
             <Route
               exact
               path={`${process.env.BASE_PATH || ""}/`}
