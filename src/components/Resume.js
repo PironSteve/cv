@@ -146,7 +146,8 @@ export default class Resume extends React.Component {
           </div>
           <section id="about" className="container-fluid">
             <div className="col-xs-8 col-md-4 profile-picture">
-              <img src={me} alt="Piron Steve" className="img-circle" />
+              path={`${process.env.BASE_PATH || ""}/${me}`}
+              <img src={} alt="Piron Steve" className="img-circle" />
             </div>
             <div className="heading">
               <h1>Hello, moi c'est Steve</h1>
