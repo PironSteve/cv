@@ -33368,7 +33368,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "/",
+        path: "".concat(undefined || "", "/"),
         component: _Intro.default
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/resume",
