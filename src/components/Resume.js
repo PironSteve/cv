@@ -1,6 +1,6 @@
 import React from "react";
 import me from "../../src/img/me.jpg";
-import Html from "../img/HTML5.png";
+import html from "../img/HTML5.png";
 import Css from "../img/CSS3.png";
 import Reactjs from "../img/ReactJS.png";
 import Boot from "../img/Bootstrap.png";
@@ -190,7 +190,7 @@ export default class Resume extends React.Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="comp-container">
-                    <img className="comp" src={Html} alt="" />
+                    <img className="comp" src={html} alt="" />
                     <img className="comp" src={Css} alt="" />
                     <img className="comp" src={Reactjs} alt="" />
                     <img className="comp" src={Boot} alt="" />
