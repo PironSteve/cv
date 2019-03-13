@@ -1,6 +1,6 @@
 import React from "react";
 import me from "../../src/img/me.jpg";
-import html from "../img/HTML5.png";
+import html from "../../src/img/HTML5.png";
 import Css from "../img/CSS3.png";
 import Reactjs from "../img/ReactJS.png";
 import Boot from "../img/Bootstrap.png";
