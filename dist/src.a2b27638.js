@@ -32975,7 +32975,27 @@ function (_React$Component) {
         className: "nav-link"
       }, _react.default.createElement("a", {
         href: "#recommandations"
-      }, "Recommandations"))))))), _react.default.createElement("section", {
+      }, "Recommandations"))))))), _react.default.createElement("div", {
+        className: "contact-info"
+      }, _react.default.createElement("div", {
+        className: "option"
+      }, _react.default.createElement("i", {
+        "class": "fas fa-map-marker-alt"
+      }), _react.default.createElement("div", {
+        className: "info"
+      }, "Li\xE8ge, Belgium")), _react.default.createElement("div", {
+        className: "option"
+      }, _react.default.createElement("i", {
+        "class": "far fa-envelope"
+      }), _react.default.createElement("div", {
+        className: "info"
+      }, "steve.piron@gmail.com")), _react.default.createElement("div", {
+        className: "option"
+      }, _react.default.createElement("i", {
+        "class": "fas fa-mobile-alt"
+      }), _react.default.createElement("div", {
+        className: "info"
+      }, "+32494124963"))), _react.default.createElement("section", {
         id: "about",
         className: "container-fluid"
       }, _react.default.createElement("div", {

@@ -179,7 +179,8 @@ section {
   font-size: 12px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 99999; }
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -427,3 +428,41 @@ footer {
   footer h5 {
     color: #30bced;
     font-weight: normal; }
+
+.contact-info {
+  font-family: "montserrat", sans-serif;
+  position: absolute;
+  top: 40%;
+  z-index: 99998;
+  left: 0; }
+
+.option {
+  cursor: pointer;
+  position: relative; }
+  .option i {
+    display: block;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background: #f1f1f1;
+    color: #b9b9b9;
+    font-size: 20px;
+    transition: 0.6s; }
+  .option:hover i {
+    color: #30bced; }
+  .option:hover .info {
+    left: 60px; }
+
+.info {
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  background: #1b1b1b;
+  top: 0;
+  z-index: -1;
+  left: -140px;
+  color: #30bced;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.6s; }

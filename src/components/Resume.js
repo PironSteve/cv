@@ -130,7 +130,20 @@ export default class Resume extends React.Component {
               </div>
             </div>
           </nav>
-
+          <div className="contact-info">
+            <div className="option">
+              <i class="fas fa-map-marker-alt" />
+              <div className="info">Liège, Belgium</div>
+            </div>
+            <div className="option">
+              <i class="far fa-envelope" />
+              <div className="info">steve.piron@gmail.com</div>
+            </div>
+            <div className="option">
+              <i class="fas fa-mobile-alt" />
+              <div className="info">+32494124963</div>
+            </div>
+          </div>
           <section id="about" className="container-fluid">
             <div className="col-xs-8 col-md-4 profile-picture">
               <img src={Me} alt="Piron Steve" className="img-circle" />
