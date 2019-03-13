@@ -204,16 +204,56 @@ export default class Resume extends React.Component {
                       src={`${process.env.BASE_PATH || ""}/${Css}`}
                       alt=""
                     />
-                    <img className="comp" src={Reactjs} alt="" />
-                    <img className="comp" src={Boot} alt="" />
-                    <img className="comp" src={Sass} alt="" />
-                    <img className="comp" src={Java} alt="" />
-                    <img className="comp" src={Git} alt="" />
-                    <img className="comp" src={Mongo} alt="" />
-                    <img className="comp" src={Node} alt="" />
-                    <img className="comp" src={Mysql} alt="" />
-                    <img className="comp" src={Php} alt="" />
-                    <img className="comp" src={Vue} alt="" />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Reactjs}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Boot}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Sass}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Java}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Git}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Mongo}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Node}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Mysql}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Php}`}
+                      alt=""
+                    />
+                    <img
+                      className="comp"
+                      src={`${process.env.BASE_PATH || ""}/${Vue}`}
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -367,7 +407,10 @@ export default class Resume extends React.Component {
                     href="https://pironsteve.000webhostapp.com/travelagency/"
                     target="_blank"
                   >
-                    <img src={Travelagency} alt="travel agency" />
+                    <img
+                      src={`${process.env.BASE_PATH || ""}/${Travelagency}`}
+                      alt="travel agency"
+                    />
                   </a>
                 </div>
                 <div className="col-sm-4">
@@ -376,7 +419,10 @@ export default class Resume extends React.Component {
                     href="https://pironsteve.000webhostapp.com/snake/"
                     target="_blank"
                   >
-                    <img src={Snake} alt="snake game" />
+                    <img
+                      src={`${process.env.BASE_PATH || ""}/${Snake}`}
+                      alt="snake game"
+                    />
                   </a>
                 </div>
                 <div className="col-sm-4">
@@ -385,7 +431,10 @@ export default class Resume extends React.Component {
                     href="https://pironsteve.000webhostapp.com/topactrices/"
                     target="_blank"
                   >
-                    <img src={Topactrices} alt="top actrices" />
+                    <img
+                      src={`${process.env.BASE_PATH || ""}/${Topactrices}`}
+                      alt="top actrices"
+                    />
                   </a>
                 </div>
                 <div className="col-sm-4">
@@ -394,7 +443,10 @@ export default class Resume extends React.Component {
                     href="https://pironsteve.github.io/pomodoro-reactjs"
                     target="_blank"
                   >
-                    <img src={Pomodoro} alt="pomodoro" />
+                    <img
+                      src={`${process.env.BASE_PATH || ""}/${Pomodoro}`}
+                      alt="pomodoro"
+                    />
                   </a>
                 </div>
                 <div className="col-sm-4">
@@ -403,7 +455,10 @@ export default class Resume extends React.Component {
                     href="https://pironsteve.github.io/cv"
                     target="_blank"
                   >
-                    <img src={Cv} alt="cv" />
+                    <img
+                      src={`${process.env.BASE_PATH || ""}/${Cv}`}
+                      alt="cv"
+                    />
                   </a>
                 </div>
               </div>
