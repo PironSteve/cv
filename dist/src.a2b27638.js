@@ -32795,7 +32795,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _me = _interopRequireDefault(require("../img/me.jpg"));
+var _me = _interopRequireDefault(require("../../src/img/me.jpg"));
 
 var _HTML = _interopRequireDefault(require("../img/HTML5.png"));
 
@@ -33336,7 +33336,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Resume;
-},{"react":"node_modules/react/index.js","../img/me.jpg":"src/img/me.jpg","../img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
