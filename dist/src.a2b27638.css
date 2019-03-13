@@ -182,7 +182,7 @@ section {
   font-weight: bold;
   z-index: 99999; }
   .navbar .navbar-nav {
-    display: inline-block;
+    display: inline-flex;
     float: none;
     vertical-align: top; }
   .navbar .navbar-collapse {

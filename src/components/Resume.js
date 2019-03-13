@@ -49,7 +49,7 @@ export default class Resume extends React.Component {
               <div className="collapse navbar-collapse" id="myNavbar">
                 <ul className="nav navbar-nav">
                   <Link
-                    className="nav navbar-nav"
+                    className="nav navbar-navi"
                     activeClass="active"
                     to="about"
                     spy={true}
@@ -62,7 +62,7 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-nav"
+                    className="nav navbar-navi"
                     activeClass="active"
                     to="skills"
                     spy={true}
@@ -75,7 +75,7 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-nav"
+                    className="nav navbar-navi"
                     activeClass="active"
                     to="experience"
                     spy={true}
@@ -88,7 +88,7 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-nav"
+                    className="nav navbar-navi"
                     activeClass="active"
                     to="education"
                     spy={true}
@@ -101,7 +101,7 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-nav"
+                    className="nav navbar-navi"
                     activeClass="active"
                     to="portfolio"
                     spy={true}
@@ -114,7 +114,7 @@ export default class Resume extends React.Component {
                     </li>
                   </Link>
                   <Link
-                    className="nav navbar-nav"
+                    className="nav navbar-navi"
                     activeClass="active"
                     to="recommandations"
                     spy={true}
@@ -146,7 +146,11 @@ export default class Resume extends React.Component {
           </div>
           <section id="about" className="container-fluid">
             <div className="col-xs-8 col-md-4 profile-picture">
-              <img src={Me} alt="Piron Steve" className="img-circle" />
+              <img
+                src={`/resume/${Me}`}
+                alt="Piron Steve"
+                className="img-circle"
+              />
             </div>
             <div className="heading">
               <h1>Hello, moi c'est Steve</h1>

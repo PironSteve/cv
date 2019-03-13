@@ -32904,7 +32904,7 @@ function (_React$Component) {
       }, _react.default.createElement("ul", {
         className: "nav navbar-nav"
       }, _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-nav",
+        className: "nav navbar-navi",
         activeClass: "active",
         to: "about",
         spy: true,
@@ -32916,7 +32916,7 @@ function (_React$Component) {
       }, _react.default.createElement("a", {
         href: "#about"
       }, "Moi"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-nav",
+        className: "nav navbar-navi",
         activeClass: "active",
         to: "skills",
         spy: true,
@@ -32928,7 +32928,7 @@ function (_React$Component) {
       }, _react.default.createElement("a", {
         href: "#skills"
       }, "Comp\xE9tences"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-nav",
+        className: "nav navbar-navi",
         activeClass: "active",
         to: "experience",
         spy: true,
@@ -32940,7 +32940,7 @@ function (_React$Component) {
       }, _react.default.createElement("a", {
         href: "#experience"
       }, "Exp\xE9rience"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-nav",
+        className: "nav navbar-navi",
         activeClass: "active",
         to: "education",
         spy: true,
@@ -32952,7 +32952,7 @@ function (_React$Component) {
       }, _react.default.createElement("a", {
         href: "#education"
       }, "Education"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-nav",
+        className: "nav navbar-navi",
         activeClass: "active",
         to: "portfolio",
         spy: true,
@@ -32964,7 +32964,7 @@ function (_React$Component) {
       }, _react.default.createElement("a", {
         href: "#portfolio"
       }, "Portfolio"))), _react.default.createElement(_reactScroll.Link, {
-        className: "nav navbar-nav",
+        className: "nav navbar-navi",
         activeClass: "active",
         to: "recommandations",
         spy: true,
@@ -33001,7 +33001,7 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "col-xs-8 col-md-4 profile-picture"
       }, _react.default.createElement("img", {
-        src: _me.default,
+        src: "/resume/".concat(_me.default),
         alt: "Piron Steve",
         className: "img-circle"
       })), _react.default.createElement("div", {
