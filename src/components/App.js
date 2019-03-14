@@ -9,7 +9,11 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
-            <Route path={`${process.env.BASE_PATH || ""}/`} component={Intro} />
+            <Route
+              exact
+              path={`${process.env.BASE_PATH || ""}/`}
+              component={Intro}
+            />
             <Route path="/resume" component={Resume} />
           </Switch>
         </div>
