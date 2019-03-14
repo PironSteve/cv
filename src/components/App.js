@@ -1,7 +1,12 @@
 import React from "react";
 import Intro from "./Intro";
 import Resume from "./Resume";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import {
+  Redirect,
+  Route,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
 
 class App extends React.Component {
   render() {
@@ -15,6 +20,7 @@ class App extends React.Component {
               component={Intro}
             />
             <Route path="/resume" component={Resume} />
+            <Redirect from="/resume" to="/resume" />
           </Switch>
         </div>
       </Router>
