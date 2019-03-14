@@ -56,6 +56,7 @@ export default class Resume extends React.Component {
                     smooth={true}
                     offset={60}
                     duration={500}
+                    href="#about"
                   >
                     <li className="nav-link">
                       <a href="#about">Moi</a>
@@ -282,7 +283,7 @@ export default class Resume extends React.Component {
                         </p>
                       </div>
                       <div className="timeline-body">
-                        <p>Création de site internet et applications</p>
+                        <p>Création de sites internet et applications</p>
                       </div>
                     </div>
                   </div>

@@ -4,7 +4,7 @@
 
 body,
 html {
-  background: url(prism.54178232.png);
+  background: url(/prism.54178232.png);
   width: 100%;
   height: 100%; }
 
@@ -182,9 +182,11 @@ section {
   font-weight: bold;
   z-index: 99999; }
   .navbar .navbar-nav {
-    display: inline-flex;
     float: none;
     vertical-align: top; }
+    @media screen and (min-width: 768px) {
+      .navbar .navbar-nav {
+        display: inline-block; } }
   .navbar .navbar-collapse {
     text-align: center; }
   .navbar li a {
@@ -431,7 +433,7 @@ footer {
 
 .contact-info {
   font-family: "montserrat", sans-serif;
-  position: absolute;
+  position: fixed;
   top: 40%;
   z-index: 99998;
   left: 0; }
@@ -466,3 +468,6 @@ footer {
   line-height: 60px;
   text-align: center;
   transition: 0.6s; }
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */

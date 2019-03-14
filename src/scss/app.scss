@@ -213,9 +213,11 @@ section {
   font-weight: bold;
   z-index: 99999;
   .navbar-nav {
-    display: inline-flex;
     float: none;
     vertical-align: top;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
   }
   .navbar-collapse {
     text-align: center;

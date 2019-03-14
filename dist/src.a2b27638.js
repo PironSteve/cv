@@ -5,8 +5,6 @@
 //
 // anything defined in a previous bundle is accessed via the
 // orig method which is the require for previous bundles
-
-// eslint-disable-next-line no-global-assign
 parcelRequire = (function (modules, cache, entry, globalName) {
   // Save the require from previous bundle to this closure if any
   var previousRequire = typeof parcelRequire === 'function' && parcelRequire;
@@ -77,8 +75,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     }, {}];
   };
 
+  var error;
   for (var i = 0; i < entry.length; i++) {
-    newRequire(entry[i]);
+    try {
+      newRequire(entry[i]);
+    } catch (e) {
+      // Save first error but execute all entries
+      if (!error) {
+        error = e;
+      }
+    }
   }
 
   if (entry.length) {
@@ -103,6 +109,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   // Override the current require with this new one
+  parcelRequire = newRequire;
+
+  if (error) {
+    // throw error from earlier, _after updating parcelRequire_
+    throw error;
+  }
+
   return newRequire;
 })({"node_modules/object-assign/index.js":[function(require,module,exports) {
 /*
@@ -25691,7 +25704,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -25707,7 +25720,7 @@ function getBundleURL() {
   try {
     throw new Error();
   } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
 
     if (matches) {
       return getBaseURL(matches[0]);
@@ -25718,12 +25731,12 @@ function getBundleURL() {
 }
 
 function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
 }
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -25758,12 +25771,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/scss/app.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/scss/app.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/prism.png":[["prism.54178232.png","src/img/prism.png"],"src/img/prism.png"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-router-dom/node_modules/warning/warning.js":[function(require,module,exports) {
+},{"./../img/prism.png":[["prism.54178232.png","src/img/prism.png"],"src/img/prism.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-router-dom/node_modules/warning/warning.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -32797,7 +32810,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _me = _interopRequireDefault(require("../../src/img/me.jpg"));
 
-var _HTML = _interopRequireDefault(require("../img/HTML5.png"));
+var _HTML = _interopRequireDefault(require("../../src/img/HTML5.png"));
 
 var _CSS = _interopRequireDefault(require("../img/CSS3.png"));
 
@@ -32910,7 +32923,8 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 60,
-        duration: 500
+        duration: 500,
+        href: "#about"
       }, _react.default.createElement("li", {
         className: "nav-link"
       }, _react.default.createElement("a", {
@@ -33001,7 +33015,7 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "col-xs-8 col-md-4 profile-picture"
       }, _react.default.createElement("img", {
-        src: _me.default,
+        src: "".concat(undefined || "", "/").concat(_me.default),
         alt: "Piron Steve",
         className: "img-circle"
       })), _react.default.createElement("div", {
@@ -33046,51 +33060,51 @@ function (_React$Component) {
         className: "comp-container"
       }, _react.default.createElement("img", {
         className: "comp",
-        src: _HTML.default,
+        src: "".concat(undefined || "", "/").concat(_HTML.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _CSS.default,
+        src: "".concat(undefined || "", "/").concat(_CSS.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _ReactJS.default,
+        src: "".concat(undefined || "", "/").concat(_ReactJS.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _Bootstrap.default,
+        src: "".concat(undefined || "", "/").concat(_Bootstrap.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _SASS.default,
+        src: "".concat(undefined || "", "/").concat(_SASS.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _Javascript.default,
+        src: "".concat(undefined || "", "/").concat(_Javascript.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _Git.default,
+        src: "".concat(undefined || "", "/").concat(_Git.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _MongoDB.default,
+        src: "".concat(undefined || "", "/").concat(_MongoDB.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _NodeJS.default,
+        src: "".concat(undefined || "", "/").concat(_NodeJS.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _Mysql.default,
+        src: "".concat(undefined || "", "/").concat(_Mysql.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _PHP.default,
+        src: "".concat(undefined || "", "/").concat(_PHP.default),
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: _VueJS.default,
+        src: "".concat(undefined || "", "/").concat(_VueJS.default),
         alt: ""
       })))))), _react.default.createElement("section", {
         id: "experience"
@@ -33118,7 +33132,7 @@ function (_React$Component) {
         className: "glyphicon glyphicon-time"
       }), " ", "2018-2019")), _react.default.createElement("div", {
         className: "timeline-body"
-      }, _react.default.createElement("p", null, "Cr\xE9ation de site internet et applications"))))), _react.default.createElement("li", null, _react.default.createElement("div", {
+      }, _react.default.createElement("p", null, "Cr\xE9ation de sites internet et applications"))))), _react.default.createElement("li", null, _react.default.createElement("div", {
         className: "timeline-badge"
       }, _react.default.createElement("span", {
         className: "glyphicon glyphicon-briefcase"
@@ -33209,7 +33223,7 @@ function (_React$Component) {
         href: "https://pironsteve.000webhostapp.com/travelagency/",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: _travelagency.default,
+        src: "".concat(undefined || "", "/").concat(_travelagency.default),
         alt: "travel agency"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33218,7 +33232,7 @@ function (_React$Component) {
         href: "https://pironsteve.000webhostapp.com/snake/",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: _snake.default,
+        src: "".concat(undefined || "", "/").concat(_snake.default),
         alt: "snake game"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33227,7 +33241,7 @@ function (_React$Component) {
         href: "https://pironsteve.000webhostapp.com/topactrices/",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: _topactrices.default,
+        src: "".concat(undefined || "", "/").concat(_topactrices.default),
         alt: "top actrices"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33236,7 +33250,7 @@ function (_React$Component) {
         href: "https://pironsteve.github.io/pomodoro-reactjs",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: _pomodoro.default,
+        src: "".concat(undefined || "", "/").concat(_pomodoro.default),
         alt: "pomodoro"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33245,7 +33259,7 @@ function (_React$Component) {
         href: "https://pironsteve.github.io/cv",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: _cv.default,
+        src: "".concat(undefined || "", "/").concat(_cv.default),
         alt: "cv"
       })))))), _react.default.createElement("section", {
         id: "recommandations"
@@ -33336,7 +33350,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Resume;
-},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../../src/img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33416,7 +33430,7 @@ var _App = _interopRequireDefault(require("./components/App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById("app"));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./scss/app.scss":"src/scss/app.scss","./components/App":"src/components/App.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./scss/app.scss":"src/scss/app.scss","./components/App":"src/components/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -33438,26 +33452,46 @@ function Module(moduleName) {
 }
 
 module.bundle.Module = Module;
+var checkedAssets, assetsToAccept;
 var parent = module.bundle.parent;
 
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34299" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42797" + '/');
 
   ws.onmessage = function (event) {
+    checkedAssets = {};
+    assetsToAccept = [];
     var data = JSON.parse(event.data);
 
     if (data.type === 'update') {
-      console.clear();
-      data.assets.forEach(function (asset) {
-        hmrApply(global.parcelRequire, asset);
-      });
+      var handled = false;
       data.assets.forEach(function (asset) {
         if (!asset.isNew) {
-          hmrAccept(global.parcelRequire, asset.id);
+          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
+
+          if (didAccept) {
+            handled = true;
+          }
         }
+      }); // Enable HMR for CSS by default.
+
+      handled = handled || data.assets.every(function (asset) {
+        return asset.type === 'css' && asset.generated.js;
       });
+
+      if (handled) {
+        console.clear();
+        data.assets.forEach(function (asset) {
+          hmrApply(global.parcelRequire, asset);
+        });
+        assetsToAccept.forEach(function (v) {
+          hmrAcceptRun(v[0], v[1]);
+        });
+      } else {
+        window.location.reload();
+      }
     }
 
     if (data.type === 'reload') {
@@ -33545,7 +33579,7 @@ function hmrApply(bundle, asset) {
   }
 }
 
-function hmrAccept(bundle, id) {
+function hmrAcceptCheck(bundle, id) {
   var modules = bundle.modules;
 
   if (!modules) {
@@ -33553,9 +33587,27 @@ function hmrAccept(bundle, id) {
   }
 
   if (!modules[id] && bundle.parent) {
-    return hmrAccept(bundle.parent, id);
+    return hmrAcceptCheck(bundle.parent, id);
   }
 
+  if (checkedAssets[id]) {
+    return;
+  }
+
+  checkedAssets[id] = true;
+  var cached = bundle.cache[id];
+  assetsToAccept.push([bundle, id]);
+
+  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
+    return true;
+  }
+
+  return getParents(global.parcelRequire, id).some(function (id) {
+    return hmrAcceptCheck(global.parcelRequire, id);
+  });
+}
+
+function hmrAcceptRun(bundle, id) {
   var cached = bundle.cache[id];
   bundle.hotData = {};
 
@@ -33580,10 +33632,6 @@ function hmrAccept(bundle, id) {
 
     return true;
   }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAccept(global.parcelRequire, id);
-  });
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
-//# sourceMappingURL=/src.a2b27638.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
+//# sourceMappingURL=/src.a2b27638.js.map
