@@ -22,7 +22,7 @@
   "engine": {
     "node": "11.8"
   },
-  "homepage": "https://pironsteve.github.io/cv",
+  "homepage": "https://pironsteve.github.io/resume",
   "dependencies": {
     "@cloudpower97/react-spy": "^1.2.1",
     "gh-pages": "^2.0.1",
