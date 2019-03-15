@@ -33015,7 +33015,7 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "col-xs-8 col-md-4 profile-picture"
       }, _react.default.createElement("img", {
-        src: "".concat(undefined || "", "/").concat(_me.default),
+        src: _me.default,
         alt: "Piron Steve",
         className: "img-circle"
       })), _react.default.createElement("div", {
@@ -33060,51 +33060,51 @@ function (_React$Component) {
         className: "comp-container"
       }, _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_HTML.default),
+        src: _HTML.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_CSS.default),
+        src: _CSS.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_ReactJS.default),
+        src: _ReactJS.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_Bootstrap.default),
+        src: _Bootstrap.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_SASS.default),
+        src: _SASS.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_Javascript.default),
+        src: _Javascript.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_Git.default),
+        src: _Git.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_MongoDB.default),
+        src: _MongoDB.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_NodeJS.default),
+        src: _NodeJS.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_Mysql.default),
+        src: _Mysql.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_PHP.default),
+        src: _PHP.default,
         alt: ""
       }), _react.default.createElement("img", {
         className: "comp",
-        src: "".concat(undefined || "", "/").concat(_VueJS.default),
+        src: _VueJS.default,
         alt: ""
       })))))), _react.default.createElement("section", {
         id: "experience"
@@ -33223,7 +33223,7 @@ function (_React$Component) {
         href: "https://pironsteve.000webhostapp.com/travelagency/",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: "".concat(undefined || "", "/").concat(_travelagency.default),
+        src: _travelagency.default,
         alt: "travel agency"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33232,7 +33232,7 @@ function (_React$Component) {
         href: "https://pironsteve.000webhostapp.com/snake/",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: "".concat(undefined || "", "/").concat(_snake.default),
+        src: _snake.default,
         alt: "snake game"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33241,7 +33241,7 @@ function (_React$Component) {
         href: "https://pironsteve.000webhostapp.com/topactrices/",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: "".concat(undefined || "", "/").concat(_topactrices.default),
+        src: _topactrices.default,
         alt: "top actrices"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33250,7 +33250,7 @@ function (_React$Component) {
         href: "https://pironsteve.github.io/pomodoro-reactjs",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: "".concat(undefined || "", "/").concat(_pomodoro.default),
+        src: _pomodoro.default,
         alt: "pomodoro"
       }))), _react.default.createElement("div", {
         className: "col-sm-4"
@@ -33259,7 +33259,7 @@ function (_React$Component) {
         href: "https://pironsteve.github.io/cv",
         target: "_blank"
       }, _react.default.createElement("img", {
-        src: "".concat(undefined || "", "/").concat(_cv.default),
+        src: _cv.default,
         alt: "cv"
       })))))), _react.default.createElement("section", {
         id: "recommandations"
@@ -33400,9 +33400,9 @@ function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      return _react.default.createElement(_reactRouterDom.HashRouter, null, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "".concat(undefined || "", "/"),
+        path: "/",
         component: _Intro.default
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/resume",
@@ -33458,7 +33458,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42797" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44319" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

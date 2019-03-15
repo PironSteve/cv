@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "./Intro";
 import Resume from "./Resume";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, HashRouter as Router, Switch } from "react-router-dom";
 
 class App extends React.Component {
   render() {
