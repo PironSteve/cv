@@ -32922,7 +32922,7 @@ function (_React$Component) {
         to: "about",
         spy: true,
         smooth: true,
-        offset: 60,
+        offset: 0,
         duration: 500,
         href: "#about"
       }, _react.default.createElement("li", {
@@ -32935,7 +32935,7 @@ function (_React$Component) {
         to: "skills",
         spy: true,
         smooth: true,
-        offset: 60,
+        offset: 0,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
@@ -32947,7 +32947,7 @@ function (_React$Component) {
         to: "experience",
         spy: true,
         smooth: true,
-        offset: 60,
+        offset: 0,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
@@ -32959,7 +32959,7 @@ function (_React$Component) {
         to: "education",
         spy: true,
         smooth: true,
-        offset: 60,
+        offset: 0,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
@@ -32971,7 +32971,7 @@ function (_React$Component) {
         to: "portfolio",
         spy: true,
         smooth: true,
-        offset: 60,
+        offset: 0,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
@@ -32983,7 +32983,7 @@ function (_React$Component) {
         to: "recommandations",
         spy: true,
         smooth: true,
-        offset: 60,
+        offset: 0,
         duration: 500
       }, _react.default.createElement("li", {
         className: "nav-link"
@@ -33458,7 +33458,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44319" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37887" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

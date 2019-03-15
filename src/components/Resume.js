@@ -54,7 +54,7 @@ export default class Resume extends React.Component {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={0}
                     duration={500}
                     href="#about"
                   >
@@ -68,7 +68,7 @@ export default class Resume extends React.Component {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={0}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -81,7 +81,7 @@ export default class Resume extends React.Component {
                     to="experience"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={0}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -94,7 +94,7 @@ export default class Resume extends React.Component {
                     to="education"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={0}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -107,7 +107,7 @@ export default class Resume extends React.Component {
                     to="portfolio"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={0}
                     duration={500}
                   >
                     <li className="nav-link">
@@ -120,7 +120,7 @@ export default class Resume extends React.Component {
                     to="recommandations"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={0}
                     duration={500}
                   >
                     <li className="nav-link">
