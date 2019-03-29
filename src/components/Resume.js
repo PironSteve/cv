@@ -301,7 +301,7 @@ export default class Resume extends React.Component {
             </div>
             <div
               className="container"
-              data-aos="fade-right"
+              data-aos="fade-left"
               data-aos-duration="1500"
             >
               <div className="row">
@@ -366,7 +366,7 @@ export default class Resume extends React.Component {
             </div>
             <div
               className="container"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1500"
             >
               <div className="row">

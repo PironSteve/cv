@@ -33197,7 +33197,7 @@ function (_React$Component) {
         className: "heading"
       }, _react.default.createElement("h2", null, "Education")), _react.default.createElement("div", {
         className: "container",
-        "data-aos": "fade-right",
+        "data-aos": "fade-left",
         "data-aos-duration": "1500"
       }, _react.default.createElement("div", {
         className: "row"
@@ -33241,7 +33241,7 @@ function (_React$Component) {
         className: "heading"
       }, _react.default.createElement("h2", null, "Portfolio")), _react.default.createElement("div", {
         className: "container",
-        "data-aos": "fade-left",
+        "data-aos": "fade-up",
         "data-aos-duration": "1500"
       }, _react.default.createElement("div", {
         className: "row"
@@ -33496,7 +33496,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35763" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40397" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
