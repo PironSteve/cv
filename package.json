@@ -25,6 +25,7 @@
   "homepage": "https://pironsteve.github.io/cv",
   "dependencies": {
     "@cloudpower97/react-spy": "^1.2.1",
+    "aos": "^3.0.0-beta.6",
     "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",

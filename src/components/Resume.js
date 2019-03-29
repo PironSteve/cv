@@ -19,6 +19,9 @@ import Pomodoro from "../img/pomodoro.png";
 import Cv from "../img/cv.png";
 import Business from "../img/business.png";
 import { Link, animateScroll as scroll } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default class Resume extends React.Component {
   componentDidMount() {
@@ -188,7 +191,11 @@ export default class Resume extends React.Component {
             <div className="heading">
               <h2>Compétences</h2>
             </div>
-            <div className="container">
+            <div
+              className="container"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div className="row">
                 <div className="col-md-12">
                   <div className="comp-container">
@@ -211,11 +218,15 @@ export default class Resume extends React.Component {
           </section>
 
           <section id="experience">
-            <div className="container">
-              <div className="white-divider" />
-              <div className="heading">
-                <h2>Expérience Professionnelle</h2>
-              </div>
+            <div className="white-divider" />
+            <div className="heading">
+              <h2>Expérience Professionnelle</h2>
+            </div>
+            <div
+              className="container"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <ul className="timeline">
                 <li>
                   <div className="timeline-badge">
@@ -284,11 +295,15 @@ export default class Resume extends React.Component {
           </section>
 
           <section id="education">
-            <div className="container">
-              <div className="red-divider" />
-              <div className="heading">
-                <h2>Education</h2>
-              </div>
+            <div className="red-divider" />
+            <div className="heading">
+              <h2>Education</h2>
+            </div>
+            <div
+              className="container"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div className="row">
                 <div className="col-sm-3">
                   <div className="education-block">
@@ -345,11 +360,15 @@ export default class Resume extends React.Component {
           </section>
 
           <section id="portfolio">
-            <div className="container">
-              <div className="white-divider" />
-              <div className="heading">
-                <h2>Portfolio</h2>
-              </div>
+            <div className="white-divider" />
+            <div className="heading">
+              <h2>Portfolio</h2>
+            </div>
+            <div
+              className="container"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <div className="row">
                 <div className="col-sm-4">
                   <a

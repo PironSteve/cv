@@ -419,6 +419,9 @@ section {
   h3 {
     margin-top: 5px;
     font-size: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   h4 {
     color: #fc5130;
@@ -564,12 +567,18 @@ footer {
     color: #b9b9b9;
     font-size: 20px;
     transition: 0.6s;
+    @media screen and (max-width: 768px) {
+      width: 30px;
+    }
   }
   &:hover i {
     color: #30bced;
   }
   &:hover .info {
     left: 60px;
+    @media screen and (max-width: 768px) {
+      left: 30px;
+    }
   }
 }
 .info {
@@ -584,4 +593,7 @@ footer {
   line-height: 60px;
   text-align: center;
   transition: 0.6s;
+  @media screen and (max-width: 768px) {
+    left: -170px;
+  }
 }
