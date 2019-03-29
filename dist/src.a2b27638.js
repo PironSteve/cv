@@ -33137,7 +33137,7 @@ function (_React$Component) {
         className: "heading"
       }, _react.default.createElement("h2", null, "Exp\xE9rience Professionnelle")), _react.default.createElement("div", {
         className: "container",
-        "data-aos": "fade-left",
+        "data-aos": "fade-up",
         "data-aos-duration": "1500"
       }, _react.default.createElement("ul", {
         className: "timeline"
@@ -33496,7 +33496,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33693" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35763" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
