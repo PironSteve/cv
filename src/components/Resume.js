@@ -17,6 +17,7 @@ import Snake from "../img/snake.png";
 import Topactrices from "../img/topactrices.png";
 import Pomodoro from "../img/pomodoro.png";
 import Cv from "../img/cv.png";
+import Business from "../img/business.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Resume extends React.Component {
@@ -393,6 +394,15 @@ export default class Resume extends React.Component {
                     target="_blank"
                   >
                     <img src={Cv} alt="cv" />
+                  </a>
+                </div>
+                <div className="col-sm-4">
+                  <a
+                    className="thumbnail"
+                    href="https://pironsteve.github.io/business-card"
+                    target="_blank"
+                  >
+                    <img src={Business} alt="business card" />
                   </a>
                 </div>
               </div>

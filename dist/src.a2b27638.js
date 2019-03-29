@@ -30756,6 +30756,8 @@ module.exports = "/topactrices.26b74c3c.png";
 module.exports = "/pomodoro.fc01432b.png";
 },{}],"src/img/cv.png":[function(require,module,exports) {
 module.exports = "/cv.376a05c7.png";
+},{}],"src/img/business.png":[function(require,module,exports) {
+module.exports = "/business.9d6dc255.png";
 },{}],"node_modules/react-scroll/modules/mixins/utils.js":[function(require,module,exports) {
 'use strict';
 
@@ -32844,6 +32846,8 @@ var _pomodoro = _interopRequireDefault(require("../img/pomodoro.png"));
 
 var _cv = _interopRequireDefault(require("../img/cv.png"));
 
+var _business = _interopRequireDefault(require("../img/business.png"));
+
 var _reactScroll = require("react-scroll");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -33261,6 +33265,15 @@ function (_React$Component) {
       }, _react.default.createElement("img", {
         src: _cv.default,
         alt: "cv"
+      }))), _react.default.createElement("div", {
+        className: "col-sm-4"
+      }, _react.default.createElement("a", {
+        className: "thumbnail",
+        href: "https://pironsteve.github.io/business-card",
+        target: "_blank"
+      }, _react.default.createElement("img", {
+        src: _business.default,
+        alt: "business card"
       })))))), _react.default.createElement("section", {
         id: "recommandations"
       }, _react.default.createElement("div", {
@@ -33350,7 +33363,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Resume;
-},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../../src/img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../../src/img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","../img/business.png":"src/img/business.png","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33458,7 +33471,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37887" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39197" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
