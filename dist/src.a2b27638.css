@@ -391,6 +391,7 @@ section {
   width: 100%;
   height: 100%;
   min-height: 233.33px;
+  max-height: 233.33px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%); }
   #portfolio .thumbnail img:hover {

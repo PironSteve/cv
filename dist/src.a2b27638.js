@@ -30760,6 +30760,8 @@ module.exports = "/cv.376a05c7.png";
 module.exports = "/business.9d6dc255.png";
 },{}],"src/img/gsap.png":[function(require,module,exports) {
 module.exports = "/gsap.0d2573a7.png";
+},{}],"src/img/arkanowid.png":[function(require,module,exports) {
+module.exports = "/arkanowid.841c1b98.png";
 },{}],"node_modules/react-scroll/modules/mixins/utils.js":[function(require,module,exports) {
 'use strict';
 
@@ -32863,6 +32865,8 @@ var _business = _interopRequireDefault(require("../img/business.png"));
 
 var _gsap = _interopRequireDefault(require("../img/gsap.png"));
 
+var _arkanowid = _interopRequireDefault(require("../img/arkanowid.png"));
+
 var _reactScroll = require("react-scroll");
 
 var _aos = _interopRequireDefault(require("aos"));
@@ -33312,6 +33316,15 @@ function (_React$Component) {
       }, _react.default.createElement("img", {
         src: _gsap.default,
         alt: "gsap animation"
+      }))), _react.default.createElement("div", {
+        className: "col-sm-4"
+      }, _react.default.createElement("a", {
+        className: "thumbnail",
+        href: "https://pironsteve.github.io/arkanowid",
+        target: "_blank"
+      }, _react.default.createElement("img", {
+        src: _arkanowid.default,
+        alt: "arkanowid canvas"
       })))))), _react.default.createElement("section", {
         id: "recommandations"
       }, _react.default.createElement("div", {
@@ -33401,7 +33414,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Resume;
-},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../../src/img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","../img/business.png":"src/img/business.png","../img/gsap.png":"src/img/gsap.png","react-scroll":"node_modules/react-scroll/modules/index.js","aos":"node_modules/aos/dist/aos.js","aos/dist/aos.css":"node_modules/aos/dist/aos.css"}],"src/components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../src/img/me.jpg":"src/img/me.jpg","../../src/img/HTML5.png":"src/img/HTML5.png","../img/CSS3.png":"src/img/CSS3.png","../img/ReactJS.png":"src/img/ReactJS.png","../img/Bootstrap.png":"src/img/Bootstrap.png","../img/SASS.png":"src/img/SASS.png","../img/Javascript.png":"src/img/Javascript.png","../img/Git.png":"src/img/Git.png","../img/MongoDB.png":"src/img/MongoDB.png","../img/NodeJS.png":"src/img/NodeJS.png","../img/Mysql.png":"src/img/Mysql.png","../img/PHP.png":"src/img/PHP.png","../img/VueJS.png":"src/img/VueJS.png","../img/travelagency.png":"src/img/travelagency.png","../img/snake.png":"src/img/snake.png","../img/topactrices.png":"src/img/topactrices.png","../img/pomodoro.png":"src/img/pomodoro.png","../img/cv.png":"src/img/cv.png","../img/business.png":"src/img/business.png","../img/gsap.png":"src/img/gsap.png","../img/arkanowid.png":"src/img/arkanowid.png","react-scroll":"node_modules/react-scroll/modules/index.js","aos":"node_modules/aos/dist/aos.js","aos/dist/aos.css":"node_modules/aos/dist/aos.css"}],"src/components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33509,7 +33522,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45295" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40185" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
