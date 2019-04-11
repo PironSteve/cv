@@ -19,6 +19,7 @@ import Pomodoro from "../img/pomodoro.png";
 import Cv from "../img/cv.png";
 import Business from "../img/business.png";
 import Gsap from "../img/gsap.png";
+import Arkanowid from "../img/arkanowid.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -432,6 +433,15 @@ export default class Resume extends React.Component {
                     target="_blank"
                   >
                     <img src={Gsap} alt="gsap animation" />
+                  </a>
+                </div>
+                <div className="col-sm-4">
+                  <a
+                    className="thumbnail"
+                    href="https://pironsteve.github.io/arkanowid"
+                    target="_blank"
+                  >
+                    <img src={Arkanowid} alt="arkanowid canvas" />
                   </a>
                 </div>
               </div>
